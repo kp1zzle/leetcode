@@ -18,7 +18,7 @@ def getRightChildIndex(index: int) -> int:
 
 
 def createNode(index, l: List) -> TreeNode:
-    if index < len(l) and l[index]:
+    if index < len(l) and l[index] != None:
         return TreeNode(val=l[index],
                         left=createNode(getLeftChildIndex(index), l),
                         right=createNode(getRightChildIndex(index), l)
